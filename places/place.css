@@ -1,0 +1,282 @@
+.main {
+    font-family: 'Bahnschrift';
+    background: linear-gradient(white 300px, rgb(225, 225, 225));
+    border-radius: 10px 10px 10px 10px;
+}
+/*Встречающая картинка*/
+.welcome {
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0px 0px;
+    width:100%;
+}
+
+.info {
+    color			: rgb(255, 255, 255);
+}
+
+.info_name {
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.641);
+    border-radius: 10px;
+    padding: 5px 10px 0px 10px;
+}
+
+/*Сеты меню*/
+
+.sets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.set {
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(213, 213, 213);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.set:hover {
+    box-shadow: 1px 1px 7px black;
+}
+
+.set_info {
+    flex: 1 0 auto;
+}
+
+.set_weight, .description {
+    color: gray;
+}
+
+.set_price {
+    float: right;
+}
+
+.description {
+    overflow-wrap: break-word;
+    line-height: 1.33;
+    margin: 8px 0px;
+}
+
+.set img {
+    border-radius: 10px;
+}
+
+button {
+    cursor: pointer;
+    color: white;
+    background-color: green;
+    margin-top: 10px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: rgb(5, 92, 5);
+}
+
+footer {
+    background-color: rgb(233, 233, 233);
+    padding: 10px;
+    color: rgb(134, 134, 134);
+}
+
+@media(min-width:280px) {
+    .main {
+        margin: 50px 10px;
+        border: 0;
+    }
+
+    .welcome {
+        height: 250px;
+    }
+
+    .info {
+        padding: 210px 10px 10px 10px;
+    }
+
+    .info_name {
+        font-size: 25px;
+    }
+
+    .set {
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+        width: 100%; 
+    }
+
+    .set_info {
+        font-size: 15px;
+        padding-top: 5px;
+    }
+
+    .description {
+        font-size: 10px;
+    }
+
+    button {
+        font-size: 11px;
+        width: 70px;
+        height: 30px;
+    }
+}
+
+@media(min-width:540px) {
+    .main {
+        margin: 50px 10px;
+        border: 1px solid silver;
+    }
+
+    .welcome {
+        height: 250px;
+    }
+
+    .info {
+        padding: 200px 10px 10px 10px;
+    }
+
+    .info_name {
+        font-size: 35px;
+    }
+
+    .set {
+        margin: 10px;
+        padding: 5px 10px 5px 10px;
+        width: 40%; 
+    }
+
+    .set_info {
+        font-size: 15px;
+        padding-top: 5px;
+    }
+
+    .description {
+        font-size: 10px;
+    }
+
+    button {
+        font-size: 11px;
+        width: 70px;
+        height: 30px;
+    }
+}
+
+@media(min-width:1024px) {
+    .main {
+        margin: 50px 120px;
+    }
+
+    .welcome {
+        height: 250px;
+    }
+
+    .info {
+        padding: 200px 10px 10px 10px;
+    }
+
+    .info_name {
+        font-size: 35px;
+    }
+
+    .set {
+        margin: 20px;
+        padding: 10px 20px 10px 20px;
+        width: 30%; 
+    }
+
+    .set_info {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+
+    .description {
+        font-size: 9px;
+    }
+
+    button {
+        font-size: 11px;
+        width: 70px;
+        height: 30px;
+    }
+}
+
+@media(min-width:1280px) {
+    .main {
+        margin: 60px 200px;
+    }
+
+    .welcome {
+        height: 250px;
+    }
+
+    .info {
+        padding: 200px 10px 10px 10px;
+    }
+
+    .info_name {
+        font-size: 35px;
+    }
+
+    .set {
+        margin: 20px;
+        padding: 10px 20px 10px 20px;
+        width: 30%; 
+    }
+
+    .set_info {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+
+    .description {
+        font-size: 10px;
+    }
+
+    button {
+        font-size: 11px;
+        width: 70px;
+        height: 30px;
+    }
+}
+
+@media(min-width:1920px) {
+    .main {
+        margin: 100px 300px;
+    }
+
+    .welcome {
+        height: 400px;
+    }
+
+    .info {
+        padding: 320px 10px 10px 10px;
+    }
+
+    .info_name {
+        font-size: 60px;
+    }
+
+    .set {
+        margin: 25px;
+        padding: 10px 20px 10px 20px;
+        width: 30%; 
+    }
+
+    .set_info {
+        font-size: 18px;
+        padding-top: 10px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    button {
+        font-size: 15px;
+        width: 100px;
+        height: 40px;
+    }
+}

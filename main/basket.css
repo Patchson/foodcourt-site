@@ -1,0 +1,372 @@
+* {
+    font-family: 'Bahnschrift';
+}
+
+body {
+    margin: 0;
+    background-color: rgb(238, 238, 238);
+}
+
+img {
+    width: 100%;
+}
+
+/*Верзняя панель*/
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgb(238, 238, 238);
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    margin: 0px 20px;
+}
+
+.back {
+    color: gray;
+    cursor: pointer;
+}
+
+.account {
+    border: 1px solid gray;
+    border-radius: 30px;
+    background-color: white;
+    background-position: center;
+}
+
+/*Корзина*/
+
+.root {
+    width: 100%;
+}
+
+.root_top {
+    margin: 0 auto;
+    max-width: 1144px;
+}
+
+.root_top h1 {
+    margin-bottom: 0;
+}
+
+/*Инфо*/
+
+.basket_info {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.basket_info h2 {
+    margin: 10px;
+}
+
+form, fieldset {
+    border: 0px;
+}
+
+#info_delivery {
+    padding: 10px 0;
+}
+
+#info_adress {
+    padding: 10px 0;
+}
+
+#info_adress select {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.info_adress_2 {
+    padding: 10px 0;
+}
+
+.adress_box {
+    border-radius: 10px;
+    padding: 10px;
+    width: 18%;
+}
+
+#comment {
+    padding: 10px;
+    border-radius: 10px;
+    resize: none;
+    width: 92%; 
+}
+
+.info_time input {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*Оплата*/
+
+.basket_total {
+    display: inline-block;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.basket_total h2 {
+    margin-top: 10px;
+    flex: 1 0 auto;
+}
+
+.total_card input {
+    border: 0;
+    text-decoration: none;
+}
+
+.total_card {
+    border-bottom: 1px solid gray;
+    flex-wrap: wrap;
+}
+
+.card_box {
+    padding: 10px;
+}
+
+.card_box input{
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.card_date {
+    flex: 1;
+}
+
+.card_date input{
+    width: 20%;
+}
+
+.card_cvv input{
+    width: 17%;
+}
+
+.total_price h2 {
+    margin-bottom: 5px;
+}
+
+.price_info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.price_sumbit input {
+    border: 0;
+    background-color: green;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.price_sumbit {
+    font-weight: bolder;
+}
+
+.price_sumbit input:hover {
+    background-color: rgb(1, 105, 1);
+}
+
+/*Отпечаток*/
+
+#root_bottom_box {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 88,5%;
+    padding: 10px;
+
+}
+
+#root_bottom_box div {
+    margin: 30px 10px;
+}
+
+#rb_box_bold {
+    font-weight: bold;
+}
+
+#rb_box_date {
+    display: flex;
+    justify-content: space-between;
+}
+
+#rb_comment {
+    overflow-wrap: break-word;
+}
+
+#rb_box_price{
+    display: flex;
+    justify-content: space-between;
+}
+
+.print {
+    border: 0;
+    background-color: green;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.print:hover {
+    background-color: rgb(1, 105, 1);
+}
+
+footer {
+    background-color: rgb(233, 233, 233);
+    padding: 10px;
+    color: rgb(134, 134, 134);
+}
+
+@media(min-width:280px) {
+    .back {
+        font-size: 90%;
+    }
+
+    .logo {
+        width: 60px;
+        margin-right: 20px;
+    }
+
+    .account {
+        background-size: 25px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .root_top {
+        padding: 30px 0px 0px 0px;
+    }
+
+    .root_top h1 {
+        padding-left: 10px;
+    }
+
+    .root_middle {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .basket_info {
+        width: 100%;
+    }
+
+    .basket_total {
+        width: 100%;
+    }
+
+    #root_bottom_box {
+        margin: 10px 10px;
+    }
+}
+
+@media(min-width:540px) {
+}
+
+@media(min-width:1024px) {
+    .back {
+        font-size: 200%;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .account {
+        background-size: 45px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .root_top {
+        padding: 116px 0px 64px 0px;
+    }
+
+    .root_top h1 {
+        padding-left: 60px;
+    }
+
+    .root_middle {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .basket_info {
+        width: 40%;
+        height: 520px;
+    }
+
+    .basket_total {
+        width: 42%;
+        height: 400px;
+    }
+
+    #root_bottom_box {
+        margin: 20px 46px;
+    }
+}
+
+@media(min-width:1280px) {
+
+    .basket_info {
+        width: 40%;
+        height: 500px;
+    }
+
+    .basket_total {
+        width: 42%;
+        height: 400px;
+    }
+}
+
+@media(min-width:1920px) {
+
+    .basket_info {
+        width: 40%;
+        height: 500px;
+    }
+
+    .basket_total {
+        width: 42%;
+        height: 350px;
+    }
+
+    .total_card {
+        display: flex;
+    }
+
+    .price_sumbit input {
+        font-size: large;
+    }
+
+    .price_sumbit {
+        font-size: xx-large;
+    }
+
+    #root_bottom {
+        font-size: xx-large;
+        margin-top: 50px;
+    }
+
+    .print {
+        font-size: large;
+    }
+}

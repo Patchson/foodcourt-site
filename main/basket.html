@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./basket.css">
+    <title>Basket</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="back" onclick="javascript:history.back(); return false;">
+                &#8592;
+                <span>Назад</span>
+            </a>
+            <a class="logo" href="./hub.html">
+                <img src="../images/logo.png">
+            </a>
+            <a class="account" href="#" style="background-image: url(../images/account_default.png);"></a>
+        </nav>
+    </header>
+    <div class="root">
+        <div class="root_top">
+            <h1>Корзина</h1>
+            <div class="root_middle">
+                <div class="basket_info">
+                    <h2>Условия доставки</h2>
+                    <form name="info">
+                        <fieldset>
+                            <div id="info_delivery">
+                                <input type='radio' name='delivery' value='Доставка' /> Доставка себе
+                                <input type='radio' name='delivery' value='Доставка другому' /> Доставка другому
+                            </div>
+                            <div id="info_adress">
+                                <b>Адрес:</b>
+                                <select id="adress">
+                                    <option value="ул.Пушкина д.30">ул.Пушкина д.30</option>
+                                    <option value="ул.Пушкина д.30">ул.Заводская д.89</option>
+                                    <option value="ул.Пушкина д.30">ул.Ленина д.17</option>
+                                    <option value="">Добавить адрес</option>
+                                </select>
+                            </div>
+                            <div class="info_adress_2">
+                                <input id="ship" class="adress_box" type='text' name='ship-office' placeholder="кв./офис" value="" maxlength="5"/>
+                                <input class="adress_box" type='text' name='doorcode' placeholder="Домофон" value="" maxlength="20"/>
+                                <input id="enterence" class="adress_box" type='text' name='enterence' placeholder="Подъезд" value="" maxlength="20"/>
+                                <input id="floor" class="adress_box" type='text' name='floor' placeholder="Этаж" value="" maxlength="5"/>
+                                <br>
+                                <br>
+                                <b>Комментарий к заказу:</b>
+                                <textarea id="comment" name="areatxt"></textarea> 
+                            </div>
+                            <div class="info_dop">
+                                <b>Доп.предметы</b>
+                                <br>
+                                <input type='checkbox' name='dop' value='Салфетки(x2)' /> 
+                                Салфетки(x2)
+                                <input type='checkbox' name='dop' value='Зубочистки(x4)' /> 
+                                Зубочистки(x4)
+                            </div>
+                            <br>
+                            <div class="info_time">
+                                <b>День доставки</b>
+                                <input id="date" type="date">
+                                <br>
+                                <br>
+                                <b>Время доставки</b>
+                                <input id="time" type="time">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="basket_total">
+                    <div class="total_card">
+                        <h2>Способ оплаты</h2>
+                        <form name="card" class="total_card">
+                            <div class="card_number card_box">
+                                <input type="text" placeholder="Номер карты" inputmode="numeric" pattern="[ 0-9]*" maxlength="22">
+                                <span>Номер карты</span>
+                            </div>
+                            <div class="card_date card_box">
+                                <input type="text" placeholder="ММ" inputmode="numeric" pattern="[0-9]*" maxlength="2">
+                                <span>/</span>
+                                <input type="text" placeholder="ГГ" inputmode="numeric" pattern="[0-9]*" maxlength="2">
+                            </div>
+                            <div class="card_cvv card_box">
+                                <input placeholder="CVV" type="password" inputmode="numeric" pattern="[0-9]*" data-value="" minlength="3" maxlength="4">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="total_price">
+                        <h2>Итого</h2>
+                        <div class="price_info">
+                            <span>Стоимость товаров</span>
+                            <span>20,11 б.р.</span>
+                        </div>
+                        <div class="price_info">
+                            <span>Доставка</span>
+                            <span>0 б.р.</span>
+                        </div>
+                        <div class="price_info">
+                            <span>Работа сервиса</span>
+                            <span>0,89 б.р.</span>
+                        </div>
+                    </div>
+                    <div class="price_info price_sumbit">
+                        <input type="submit" onclick="vision()" value="Оплатить"></input>
+                        <span>21 б.р.</span>
+                    </div>
+                </div>
+            </div>
+            <div id="root_bottom">
+                <div id="root_bottom_box">
+                    <div class="rb_box" id="rb_box_adress">
+                        <span id="rb_box_bold">Адрес: </span>
+                        <span>
+                            <span id="adress_adress"></span>
+                            <span id="adress_ship"></span>
+                            <span id="adress_enterence"></span>
+                            <span id="adress_floor"></span> 
+                        </span>
+                    </div>
+                    <div class="rb_box" id="rb_box_date">
+                        <span id="rb_box_bold">День доставки: </span>
+                        <span id="date_date">0000-00-00</span>
+                        <span id="rb_box_bold">Время доставки: </span>
+                        <span id="date_time">00:00</span>
+                    </div>
+                    <div class="rb_box" id="rb_box_comment">
+                        <span id="rb_box_bold">Комментарии к заказу: </span>
+                        <span id="rb_comment">Отстутствует</span>
+                    </div>
+                    <div class="rb_box" id="rb_box_price">
+                        <span id="rb_box_bold">Стоимость товаров</span>
+                        <span>20,11 б.р.</span>
+                    </div>
+                    <div class="rb_box" id="rb_box_price">
+                        <span id="rb_box_bold">Доставка</span>
+                        <span>0 б.р.</span>
+                    </div>
+                    <div class="rb_box" id="rb_box_price">
+                        <span id="rb_box_bold">Работа сервиса</span>
+                        <span>0,89 б.р.</span>
+                    </div>
+                    <div class="rb_box" id="rb_box_price">
+                        <span id="rb_box_bold">Работа сервиса</span>
+                        <span>21 б.р.</span>
+                    </div>
+                    <input class="print" type="submit" onclick="print()" value="Печать"></input>
+                </div>
+                <script>
+                    function vision() {
+                        document.getElementById('adress_adress').innerHTML=''
+                        document.getElementById('adress_adress').innerHTML=document.getElementById('adress_adress').innerHTML+''+document.getElementById('adress').value+' /'
+                        document.getElementById('adress_ship').innerHTML=''
+                        document.getElementById('adress_ship').innerHTML=document.getElementById('adress_ship').innerHTML+''+'кв. '+document.getElementById('ship').value+' /'
+                        document.getElementById('adress_enterence').innerHTML=''
+                        document.getElementById('adress_enterence').innerHTML=document.getElementById('adress_enterence').innerHTML+''+'пд. '+document.getElementById('enterence').value+' /'
+                        document.getElementById('adress_floor').innerHTML=''
+                        document.getElementById('adress_floor').innerHTML=document.getElementById('adress_floor').innerHTML+''+'эт. '+document.getElementById('floor').value
+                        
+                        document.getElementById('date_date').innerHTML=''
+                        document.getElementById('date_date').innerHTML=document.getElementById('date_date').innerHTML+''+document.getElementById('date').value
+                        document.getElementById('date_time').innerHTML=''
+                        document.getElementById('date_time').innerHTML=document.getElementById('date_time').innerHTML+''+document.getElementById('time').value
+
+                        document.getElementById('rb_comment').innerHTML=''
+                        document.getElementById('rb_comment').innerHTML=document.getElementById('rb_comment').innerHTML+''+document.getElementById('comment').value
+                       }
+                </script>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="site_info">
+            © 2020–2022 ООО «FoodCourt»
+        </div>
+    </footer>
+</body>
+</html>
