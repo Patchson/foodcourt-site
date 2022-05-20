@@ -96,6 +96,11 @@ footer {
 
     .info {
         padding: 210px 10px 10px 10px;
+        animation: info 1s linear;
+    }
+    @keyframes info {
+        from {padding: 0px 10px 10px 10px; opacity: 0%;}
+        to {padding: 210px 10px 10px 10px; opacity: 100%;}
     }
 
     .info_name {
@@ -136,6 +141,11 @@ footer {
 
     .info {
         padding: 200px 10px 10px 10px;
+        animation: info 1s linear;
+    }
+    @keyframes info {
+        from {padding: 0px 10px 10px 10px; opacity: 0%;}
+        to {padding: 200px 10px 10px 10px; opacity: 100%;}
     }
 
     .info_name {
@@ -249,10 +259,20 @@ footer {
 
     .welcome {
         height: 400px;
+        animation: welcome 1s linear;
+    }
+    @keyframes welcome {
+        from {height: 0px; opacity: 0%;}
+        to {height: 400px; opacity: 100%;}
     }
 
     .info {
         padding: 320px 10px 10px 10px;
+        animation: info 1s linear;
+    }
+    @keyframes info {
+        from {padding: 0px 10px 10px 10px; opacity: 0%;}
+        to {padding: 320px 10px 10px 10px; opacity: 100%;}
     }
 
     .info_name {

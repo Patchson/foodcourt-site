@@ -35,6 +35,8 @@ button:hover {
     background-position: center;
 }
 
+/*боксы*/
+
 .box {
     width: 450px;
     height: 300px;
@@ -42,6 +44,8 @@ button:hover {
 }
 
 .box:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0,1s linear;
     box-shadow: 1px 1px 7px black;
 }
 
@@ -67,6 +71,8 @@ button:hover {
     padding-right: 10px;
     font-weight: bold;
 }
+
+/*------------------------------------*/
 
 footer {
     background-color: rgb(233, 233, 233);
