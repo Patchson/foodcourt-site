@@ -1,4 +1,4 @@
-let mass = [
+let rest = [
         {name: 'SUSHI FROST'    , cat: 'sushi'          , rew: '4.9'    , src: '../places/sushi_frost.html'       , img: '../images/sushi_frost_small.jpg'},
         {name: 'НуарФуд'        , cat: 'pizza'          , rew: '5.0'    , src: '../places/NuarFood.html'          , img: '../images/NuarFood_small.jpg'},
         {name: 'MommyLight'     , cat: 'breakfest'      , rew: '4.9'    , src: '../places/mommy_light.html'       , img: '../images/mommy_light_small.jpg'},
@@ -25,6 +25,11 @@ let mass = [
         {name: 'Half-Pizza'     , cat: 'pizza'          , rew: '3.1'    , src: '../places/half_pizza.html'        , img: '../images/half_pizza_small.jpg'},
         {name: 'LoTiU'          , cat: 'exotic'         , rew: '4.7'    , src: '../places/lotiu.html'             , img: '../images/lotiu_small.jpg'},
 ];
+
+let inJson = JSON.stringify(rest);
+console.log(inJson);
+let mass = JSON.parse(inJson);
+console.log(mass);
 
 for (let i = 0; i < mass.length; i++) {
     document.write(`<a class="box" href="${mass[i].src}" style="background-image: url(${mass[i].img});">`);
