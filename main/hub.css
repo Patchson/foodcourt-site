@@ -23,6 +23,7 @@ button {
 
 button:hover {
     background-color: white;
+    transition: 0.3s linear;
 }
 
 /*Список ресторанов*/
@@ -50,7 +51,7 @@ button:hover {
 
 .box:hover {
     transform: scale(1.05, 1.05);
-    transition: 0,1s linear;
+    transition: 0.2s linear;
     box-shadow: 1px 1px 7px black;
 }
 

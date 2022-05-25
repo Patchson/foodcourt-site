@@ -37,6 +37,7 @@
 .account:hover, .delivery:hover {
     background-color: aliceblue;
     border-radius: 40px;
+    transition: 0.3s linear;
 }
 
 @media(min-width:280px) {

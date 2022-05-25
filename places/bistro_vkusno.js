@@ -61,32 +61,23 @@ let mass = [
         price: '3', 
         img: '../images/sets/breakfest_7.jpg',
         description: 'Кресс-салат, дыня, лосось, редис'
-    }, 
+    }
 ];
 
-
-let code;
-function Show(code) {
-    switch(code) {
-        case 1: {
-            for (let i = 0; i < mass.length; i++) {
-                document.write(`<div class="set">`);
-                    document.write(`<div class="set_info">`);
-                        document.write(`<span class="set_name">${mass[i].name} </span>`);
-                        document.write(`<span class="set_weight">${mass[i].weight}</span>`);
-                        document.write(`<span class="set_price">${mass[i].price} б.р.</span>`);
-                        document.write(`<div class="description">`);
-                            document.write(`<span>${mass[i].description}</span>`)
-                        document.write(`</div>`);
-                    document.write(`</div>`);
-                    document.write(`<img src="${mass[i].img}">`);
-                    document.write(`<button>Купить</button>`);
-                document.write(`</div>`);
-            }
-        }
-    }
-}
-                
+for (let i = 0; i < mass.length; i++) {
+    document.write(`<div class="set">`);
+        document.write(`<div class="set_info">`);
+            document.write(`<span class="set_name">${mass[i].name} </span>`);
+            document.write(`<span class="set_weight">${mass[i].weight}</span>`);
+            document.write(`<span class="set_price">${mass[i].price} б.р.</span>`);
+            document.write(`<div class="description">`);
+                document.write(`<span>${mass[i].description}</span>`)
+            document.write(`</div>`);
+        document.write(`</div>`);
+        document.write(`<img src="${mass[i].img}">`);
+        document.write(`<button>Купить</button>`);
+    document.write(`</div>`);
+}             
                 
                
             

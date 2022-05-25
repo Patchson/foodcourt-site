@@ -23,13 +23,14 @@ let rest = [
         {name: 'FallFoot'       , cat: 'dinner'         , rew: '2.9'    , src: '../places/fall_foot.html'         , img: '../images/fall_foot_small.jpg'},
         {name: 'MagaRolls'      , cat: 'sushi'          , rew: '3.0'    , src: '../places/MagaRolls.html'        , img: '../images/maga_rolls_small.jpg'},
         {name: 'Half-Pizza'     , cat: 'pizza'          , rew: '3.1'    , src: '../places/half_pizza.html'        , img: '../images/half_pizza_small.jpg'},
-        {name: 'LoTiU'          , cat: 'exotic'         , rew: '4.7'    , src: '../places/lotiu.html'             , img: '../images/lotiu_small.jpg'},
+        {name: 'LoTiU'          , cat: 'exotic'         , rew: '4.7'    , src: '../places/lotiu.html'             , img: '../images/lotiu_small.jpg'}
 ];
 
 let inJson = JSON.stringify(rest);
 console.log(inJson);
 let mass = JSON.parse(inJson);
 console.log(mass);
+console.log(rest);
 
 for (let i = 0; i < mass.length; i++) {
     document.write(`<a class="box" href="${mass[i].src}" style="background-image: url(${mass[i].img});">`);
