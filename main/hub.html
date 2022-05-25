@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Hub</title>
+        <link rel="icon" type="image/png" href="../images/favicon.png">
         <meta name="viewport" content="width=device-width; initial-scale=1.0">
         <link rel="stylesheet" href="./hub.css">
         <link rel="stylesheet" href="../nav_menu.css">
@@ -16,14 +17,35 @@
                 <a href="#" class="account" onclick="" style="background-image: url(./images/account_default.png);"></a>
             </div>
         </div> -->
-        <!-- <div class="navbar" id="navbar">
-            <a href="../main/hub.html" class="logo" style="background-image: url(../images/logo.png);"></a>
-            <div class="bar" id="bar">
-                <a href="../main/basket.html" class="delivery" style="background-image: url(../images/delivery.png);"></a>
-                <a href="#" class="account account_disable" onclick="enter()" style="background-image: url(../images/account_default.png);"></a>
+        <div class="nav" id="nav">
+            <div class="navbar" id="navbar">
+                <a href="../main/hub.html" class="logo" style="background-image: url(../images/logo.png);"></a>
+                <div class="bar" id="bar">
+                    <a href="../main/basket.html" class="delivery" style="background-image: url(../images/delivery.png);"></a>
+                    <a href="#" class="account account_disable" onclick="enter()" style="background-image: url(../images/account_default.png);"></a>
+                </div>
             </div>
-        </div> -->
-        <script src="../account.js"></script>
+            <div class="navbar_phone" id="navbar_phone">
+                <a href="../main/hub.html" class="logo_phone" style="background-image: url(../images/logo.png);"></a>
+                <a href="#submenu" class="more" style="background-image: url(../images/menu.png);" onclick="openNav()"></a>
+            </div>
+                <div id="mySidenav" class="sidenav">
+                  <a class="closebtn" onclick="closeNav()">×</a>
+                  <a href="../main/basket.html">Корзина</a>
+                  <a href="./aboutus.html">О нас</a>
+                </div>
+                
+                <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                }
+                
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+                </script>
+        </div>
+        <!-- <script src="../account.js"></script> -->
         <div class="main">
             <div class="rest_filter">
                 <button class="all" onclick="sort_all();">Все</button>

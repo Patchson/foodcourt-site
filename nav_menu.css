@@ -1,81 +1,132 @@
-/* Навигационная панель */
-.navbar {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color:rgb(255, 217, 152);
-    left: 0;
-    top: 0;
-    width: 100%;
-    box-shadow: 0px 0px 10px black;
-    border-radius: 0px 0px 0px 60px;
-}
+/*Навигационная панель(телефон)*/
 
-.navbar a {
-    background-position: center;
-}
-
-.logo {
-    background-size: 100%;
-}
-
-.bar {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    width: 100%;
-    border-radius: 0px 0px 0px 60px;
-}
-
-.delivery, .account_disable,.account_active {
-    margin-right: 10px;
-    background-size: 88%;
-    border-radius: 40px;
-}
-
-.account:hover, .delivery:hover {
-    background-color: aliceblue;
-    border-radius: 40px;
-    transition: 0.3s linear;
-}
 
 @media(min-width:280px) {
-    .logo {
-        margin: 0px 0px 0px 25px;
+    .navbar_phone {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color:rgb(255, 217, 152);
+        left: 0;
+        top: 0;
+        width: 100%;
+        box-shadow: 0px 0px 10px black;
+        border-radius: 0px 0px 0px 60px;
+    }    
+
+    .navbar_phone a {
+        background-position: center;
+    }
+    
+    .logo_phone {
+        background-size: 100%;
+        margin: 0px 0px 0px 30px;
         width: 80px;
-        height: 30px;
+        height: 40px;
     }
 
-    .delivery, .account_disable, .account_active {
-        width: 40px;
+    .more {
+        background-size: 100%;
+        margin: 10px 10px 10px 0px;
+        width: 60px;
         height: 40px;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right   : 0;
+        background-color: rgb(255, 217, 152);
+        box-shadow: 0px 0px 10px black;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+    
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    .about {
+        display: none;
     }
 }
 
-@media(min-width:540px) {
+/* Навигационная панель */
+
+@media(min-width:1000px) {
+    .about {
+        display: block;
+    }
+
+    .navbar_phone {
+        display: none;
+    }
+
+    .navbar {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color:rgb(255, 217, 152);
+        left: 0;
+        top: 0;
+        width: 100%;
+        box-shadow: 0px 0px 10px black;
+        border-radius: 0px 0px 0px 60px;
+    }
+    
+    .navbar a {
+        background-position: center;
+    }
+    
     .logo {
+        background-size: 100%;
         margin: 0px 0px 0px 30px;
         width: 80px;
         height: 30px;
     }
-
-    .delivery, .account_disable, .account_active {
+    
+    .bar {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        width: 100%;
+        border-radius: 0px 0px 0px 60px;
+    }
+    
+    .delivery, .account_disable,.account_active {
+        margin-right: 10px;
+        background-size: 88%;
+        border-radius: 40px;
         width: 40px;
         height: 40px;
     }
-}
-
-@media(min-width:1024px) {
-    .logo {
-        margin: 0px 0px 0px 30px;
-        width: 80px;
-        height: 30px;
-    }
-
-    .delivery, .account_disable, .account_active {
-        width: 40px;
-        height: 40px;
+    
+    .account:hover, .delivery:hover {
+        background-color: aliceblue;
+        border-radius: 40px;
+        transition: 0.3s linear;
     }
 }
 
