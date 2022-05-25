@@ -2,6 +2,7 @@
     font-family: 'Bahnschrift';
     background: linear-gradient(white 300px, rgb(225, 225, 225));
     border-radius: 10px 10px 10px 10px;
+    padding-top: 20px;
 }
 /*Встречающая картинка*/
 .welcome {
