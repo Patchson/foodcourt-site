@@ -64,6 +64,12 @@ let mass = [
     }
 ];
 
+let inJson = JSON.stringify(mass);
+console.log(inJson);
+let rest = JSON.parse(inJson);
+console.log(mass);
+console.log(rest);
+
 for (let i = 0; i < mass.length; i++) {
     document.write(`<div class="set">`);
         document.write(`<div class="set_info">`);

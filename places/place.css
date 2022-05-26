@@ -111,7 +111,7 @@ footer {
     }
 
     .info_name {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .set {
@@ -121,16 +121,17 @@ footer {
     }
 
     .set_info {
-        font-size: 15px;
+        font-size: 20px;
         padding-top: 5px;
     }
 
     .description {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     button {
-        font-size: 11px;
+        font-size: 15px;
+        font-weight: bold;
         width: 70px;
         height: 30px;
     }
@@ -161,12 +162,12 @@ footer {
     }
 
     .set_info {
-        font-size: 15px;
+        font-size: 20px;
         padding-top: 5px;
     }
 
     .description {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     button {
@@ -200,12 +201,12 @@ footer {
     }
 
     .set_info {
-        font-size: 12px;
+        font-size: 20px;
         padding-top: 10px;
     }
 
     .description {
-        font-size: 9px;
+        font-size: 15px;
     }
 
     button {
@@ -239,12 +240,12 @@ footer {
     }
 
     .set_info {
-        font-size: 12px;
+        font-size: 20px;
         padding-top: 10px;
     }
 
     .description {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     button {
