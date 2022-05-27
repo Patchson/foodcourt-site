@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(238, 238, 238);
+    font-family: 'Bahnschrift';
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(238, 238, 238);
+    nav {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid gray;
+        margin: 0px 20px;
+        img {
+            width: 100%;
+        }
+        
+        .back {
+            color: gray;
+            cursor: pointer;
+        }
+        
+        .account {
+            border: 1px solid gray;
+            border-radius: 30px;
+            background-color: white;
+            background-position: center;
+        }
+    }
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+@media(min-width:280px) {
+    body {
+        padding-top: 40px;
+        margin: 3px;
+    }
+    nav {
+        .back {
+            font-size: 80%;
+        }
+    
+        .logo {
+            width: 60px;
+            margin-right: 0px;
+        }
+    
+        .account {
+            background-size: 25px;
+            width: 25px;
+            height: 25px;
+        }
+    }
+    .big-box {
+        margin:  0px;
+        .box {
+            p {
+                font-size: large;
+            }
+            img {
+                width: 90%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+@media(min-width:1024px) {
+    body {
+        padding-top: 80px;
+    }
+    nav {
+        .back {
+            font-size: 200%;    
+        }
+    
+        .logo {
+            width: 120px;
+            margin-right: 70px;
+        }
+    
+        .account {
+            background-size: 45px;
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .big-box {
+        margin: 0px 180px;
+        .box {
+            p {
+                float: right;
+                font-size: large;
+            }
+            img {
+                width: 800px;
+                height: 100%;
+                display: block;
+                padding: 10px;
+                float: left;
+            }
+        }
+    }
+}

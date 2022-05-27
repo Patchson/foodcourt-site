@@ -1,0 +1,100 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+    <block>
+        <img>../images/places/place_breakfest_3.jpg</img>
+        <name>Быстро - Вкусно</name>
+    </block>
+    <block>
+        <img>../images/places/place_pizza_1.jpg</img>
+        <name>Blizzard Cringe</name>
+    </block>
+    <block>
+        <img>../images/places/place_breakfest_4.jpg</img>
+        <name>Burger Grand</name>
+    </block>
+    <block>
+        <img>../images/places/place_dinner_2.jpg</img>
+        <name>4illySup</name>
+    </block>
+    <block>
+        <img>../images/places/cowfix_big.jpg</img>
+        <name>Cowfix</name>
+    </block>
+    <block>
+        <img>../images/places/place_exotic_1.jpg</img>
+        <name>ELITE</name>
+    </block>
+    <block>
+        <img>../images/places/place_dinner_1.jpg</img>
+        <name>FallFoot</name>
+    </block>
+    <block>
+        <img>../images/places/GigaRoll_big.jpg</img>
+        <name>ГигаРолл</name>
+    </block>
+    <block>
+        <img>../images/places/place_pizza_2.jpg</img>
+        <name>Half-Pizza</name>
+    </block>
+    <block>
+        <img>../images/places/hardfood_big.jpg</img>
+        <name>ХАРДФУД</name>
+    </block>
+    <block>
+        <img>../images/places/place_breakfest_3.jpg</img>
+        <name>JustOK</name>
+    </block>
+    <block>
+        <img>../images/places/place_breakfest_5.jpg</img>
+        <name>кебап</name>
+    </block>
+    <block>
+        <img>../images/places/place_breakfest_2.jpg</img>
+        <name>#КУШАЕМДОМА</name>
+    </block>
+    <block>
+        <img>../images/places/place_exotic_1.jpg</img>
+        <name>LoTiU</name>
+    </block>
+    <block>
+        <img>../images/places/GigaRoll_big.jpg</img>
+        <name>MagaRolls</name>
+    </block>
+    <block>
+        <img>../images/places/place_breakfest_1.jpg</img>
+        <name>MommyLight</name>
+    </block>
+    <block>
+        <img>../images/places/place_exotic_2.jpg</img>
+        <name>Морская Тишина</name>
+    </block>
+    <block>
+        <img>../images/places/place_exotic_3.jpg</img>
+        <name>Новый Болен</name>
+    </block>
+    <block>
+        <img>../images/places/place_dinner_1.jpg</img>
+        <name>Новый Пирог</name>
+    </block>
+    <block>
+        <img>../images/places/place_pizza_3.jpeg</img>
+        <name>НуарФуд</name>
+    </block>
+    <block>
+        <img>../images/places/place_pizza_4.jpg</img>
+        <name>Папад Жонс</name>
+    </block>
+    <block>
+        <img>../images/places/place_pizza_5.jpg</img>
+        <name>RoflPizza</name>
+    </block>
+    <block>
+        <img>../images/places/silly_rabbit_big.jpg</img>
+        <name>сили рэбит</name>
+    </block>
+    <block>
+        <img>../images/places/GigaRoll_big.jpg</img>
+        <name>SUSHI FROST</name>
+    </block>
+</blocks>

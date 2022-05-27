@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    font-family: 'Bahnschrift';
+}
+/*Фильтр ресторанов*/
+.rest_filter {
+    background-color: rgb(233, 233, 233);
+    border-radius: 20px;
+    margin: 0 auto;
+    button {
+        cursor: pointer;
+        background-color: rgb(233, 233, 233);
+        border: 0;
+        border-radius: 10px;
+        &:hover {
+            background-color: white;
+            transition: 0.3s linear;
+        }
+    }
+    .about {
+        float: right;
+        margin-right: 10px;
+    }
+}
+
+/*Список ресторанов*/
+.rest_all {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    a {
+        text-decoration: none;
+        color: black;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+/*боксы*/
+
+.box {
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+    &:hover {
+        transform: scale(1.05, 1.05);
+        transition: 0.2s linear;
+        box-shadow: 1px 1px 7px black;
+    }
+    .vision {
+        height: 263px;
+    }
+    
+    .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color			: rgb(255, 255, 255);
+        border-radius   : 0px 0px 10px 10px;
+        background-color: rgba(0, 0, 0, 0.595);
+        .info_name {
+            padding-left: 10px;
+            font-weight: bold;
+        }
+        
+        .info_rew {
+            padding-right: 10px;
+            font-weight: bold;
+        }
+        
+    }
+    
+}
+/*------------------------------------*/
+
+footer {
+    background-color: rgb(233, 233, 233);
+    padding: 10px;
+    /* padding-bottom: 420px; */
+    color: rgb(134, 134, 134);
+}
+
+@media(min-width:280px) {
+    .main {    
+        margin-top: 65px;
+        padding: 10px 10px;
+        .box {
+            margin: 10px;
+            width: 100%;
+            height: 100%;
+            font-size: 3vh;
+            .vision {
+                height: 8em;
+            }
+        }
+        .rest_filter {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            width: 100%;
+            .all {
+                margin-left: 0px;
+            }
+            button {
+                font-size: 7vw;
+                font-weight: bold;
+                margin: 5px 0px 5px 0px;
+                
+            }
+            .about {
+                display: none;
+            }
+        }
+    }
+}
+
+@media(min-width:540px) {
+    .main {    
+        margin-top: 55px;
+        font-size: small;
+        padding: 10px 10px;
+        .box {
+            margin: 10px;
+            width: 46%;
+            height: 100%;
+            font-size: 2.7vh;
+            .vision {
+                height: 6em;
+            }
+        
+            .info_rew {
+                font-size: 1.6vh;
+            }
+        }
+        .rest_filter {
+            button {
+                font-size: 3vw;
+                margin: 10px 0px 10px 0px;
+                padding: 5px;
+            }
+        }
+    }
+}
+
+@media(min-width:1024px) {
+    .main {    
+        margin-top: 50px;
+        padding: 10px 100px;
+        .box {
+            margin: 10px;
+            width: 30%;
+            height: 100%;
+            font-size: 2vh;
+            .vision {
+                height: 14em;
+            }
+        
+            .info_rew {
+                font-size: 1.6vh;
+            }
+        }
+        .rest_filter {
+            display: block;
+            width: 100%;
+            .all {
+                margin-left: 10px;
+            }
+            button {
+                font-size: 2vw;
+                font-weight: bold;
+                margin: 5px 0px 5px 0px;
+                padding: 5px;
+                
+            }
+            .about {
+                display: inline;
+            }
+        }
+    }
+}
+
+@media(min-width:1280px) {
+    .main {    
+        margin-top: 70px;
+        padding: 10px 100px;
+        .box {
+            margin: 10px;
+            width: 31%;
+            font-size: 2.4vh;
+            .vision {
+                height: 10em;
+            }
+        
+            .info_rew {
+                font-size: 1.6vh;
+            }
+        }
+        .rest_filter {
+            button {
+                font-weight: bold;
+                font-size: 1,7vw;
+                margin: 10px 0px 10px 10px;
+                padding: 5px;
+            }
+        }
+    }
+}
+
+@media(min-width:1920px) {
+    .main {    
+        margin-top: 100px;
+        padding: 10px 300px;
+        .box {
+            margin: 10px;
+            width: 31.9%;
+            font-size: 2.4vh;
+            .vision {
+                height: 10em;
+            }
+        
+            .info_rew {
+                font-size: 2vh;
+            }
+        }
+        .rest_filter {
+            button {
+                font-weight: normal;
+                font-size: 1vw;
+                margin: 10px 0px 10px 0px;
+                padding: 10px;
+            }
+        }
+    }
+}

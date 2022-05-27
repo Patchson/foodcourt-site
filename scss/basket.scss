@@ -1,10 +1,12 @@
+$font_family:'Bahnschrift';
+$bgColor: rgb(238, 238, 238);
 * {
-    font-family: 'Bahnschrift';
+    font-family: $font_family;
 }
 
 body {
     margin: 0;
-    background-color: rgb(238, 238, 238);
+    background-color: $bgColor;
 }
 
 img {
@@ -17,44 +19,38 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
-    background-color: rgb(238, 238, 238);
+    background-color: $bgColor;
+    nav {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid gray;
+        margin: 0px 20px;
+        .back {
+            color: gray;
+            cursor: pointer;
+        }
+        
+        .account {
+            border: 1px solid gray;
+            border-radius: 30px;
+            background-color: white;
+            background-position: center;
+        }
+    }
 }
-
-nav {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid gray;
-    margin: 0px 20px;
-}
-
-.back {
-    color: gray;
-    cursor: pointer;
-}
-
-.account {
-    border: 1px solid gray;
-    border-radius: 30px;
-    background-color: white;
-    background-position: center;
-}
-
 /*Корзина*/
 
 .root {
     width: 100%;
+    .root_top {
+        margin: 0 auto;
+        max-width: 1144px;
+        h1 {
+            margin-bottom: 0;
+        }
+    }
 }
-
-.root_top {
-    margin: 0 auto;
-    max-width: 1144px;
-}
-
-.root_top h1 {
-    margin-bottom: 0;
-}
-
 /*Инфо*/
 
 .basket_info {
@@ -63,49 +59,42 @@ nav {
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
-}
-
-.basket_info h2 {
-    margin: 10px;
-}
-
-form, fieldset {
-    border: 0px;
-}
-
-#info_delivery {
-    padding: 10px 0;
-}
-
-#info_adress {
-    padding: 10px 0;
-}
-
-#info_adress select {
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.info_adress_2 {
-    padding: 10px 0;
-}
-
-.adress_box {
-    border-radius: 10px;
-    padding: 10px;
-    width: 18%;
-}
-
-#comment {
-    padding: 10px;
-    border-radius: 10px;
-    resize: none;
-    width: 92%; 
-}
-
-.info_time input {
-    padding: 10px;
-    border-radius: 10px;
+    h2 {
+        margin: 10px;
+    }
+    form, fieldset {
+        border: 0px;
+        #info_delivery {
+            padding: 10px 0;
+        }
+        #info_adress {
+            padding: 10px 0;
+            select {
+                padding: 10px;
+                border-radius: 10px;
+            }
+        }
+        .info_adress_2 {
+            padding: 10px 0;
+            .adress_box {
+                border-radius: 10px;
+                padding: 10px;
+                width: 18%;
+            }
+            #comment {
+                padding: 10px;
+                border-radius: 10px;
+                resize: none;
+                width: 92%; 
+            }
+        }
+        .info_time {
+            input {
+            padding: 10px;
+            border-radius: 10px;
+            }
+        }
+    }
 }
 
 /*Оплата*/
@@ -117,38 +106,32 @@ form, fieldset {
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
-}
-
-.basket_total h2 {
-    margin-top: 10px;
-    flex: 1 0 auto;
-}
-
-.total_card input {
-    border: 0;
-    text-decoration: none;
-}
-
-.total_card {
-    border-bottom: 1px solid gray;
-    flex-wrap: wrap;
-}
-
-.card_box {
-    padding: 10px;
-}
-
-.card_box input{
-    padding: 10px;
-    border-bottom: 1px solid gray;
-}
-
-.card_date {
-    flex: 1;
-}
-
-.card_date input{
-    width: 20%;
+    h2 {
+        margin-top: 10px;
+        flex: 1 0 auto;
+    }
+    .total_card {
+        border-bottom: 1px solid gray;
+        flex-wrap: wrap;
+        input {
+            border: 0;
+            text-decoration: none;
+        }
+        .card_date {
+            flex: 1;
+            input{
+                width: 20%;
+            }
+        }
+    }
+    .card_box {
+        padding: 10px;
+    }
+    .card_box input{
+        padding: 10px;
+        border-bottom: 1px solid gray;
+    }
+    
 }
 
 .card_cvv input{
@@ -191,43 +174,37 @@ form, fieldset {
     border-radius: 10px;
     width: 88,5%;
     padding: 10px;
-
-}
-
-#root_bottom_box div {
-    margin: 30px 10px;
-}
-
-#rb_box_bold {
-    font-weight: bold;
-}
-
-#rb_box_date {
-    display: flex;
-    justify-content: space-between;
-}
-
-#rb_comment {
-    overflow-wrap: break-word;
-}
-
-#rb_box_price{
-    display: flex;
-    justify-content: space-between;
-}
-
-.print {
-    border: 0;
-    background-color: green;
-    padding: 10px;
-    border-radius: 10px;
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.print:hover {
-    background-color: rgb(1, 105, 1);
+    div {
+        margin: 30px 10px;
+    }
+    #rb_box_bold {
+        font-weight: bold;
+    }
+    #rb_box_date {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #rb_comment {
+        overflow-wrap: break-word;
+    }
+    
+    #rb_box_price{
+        display: flex;
+        justify-content: space-between;
+    }
+    .print {
+        border: 0;
+        background-color: green;
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+        &:hover {
+            background-color: rgb(1, 105, 1);
+        }
+    }
 }
 
 footer {
@@ -276,9 +253,6 @@ footer {
     #root_bottom_box {
         margin: 10px 10px;
     }
-}
-
-@media(min-width:540px) {
 }
 
 @media(min-width:1024px) {

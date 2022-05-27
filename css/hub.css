@@ -1,0 +1,236 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  font-family: "Bahnschrift";
+}
+
+/*Фильтр ресторанов*/
+.rest_filter {
+  background-color: #e9e9e9;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.rest_filter button {
+  cursor: pointer;
+  background-color: #e9e9e9;
+  border: 0;
+  border-radius: 10px;
+}
+.rest_filter button:hover {
+  background-color: white;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.rest_filter .about {
+  float: right;
+  margin-right: 10px;
+}
+
+/*Список ресторанов*/
+.rest_all {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.rest_all a {
+  text-decoration: none;
+  color: black;
+  background-size: cover;
+  background-position: center;
+}
+
+/*боксы*/
+.box {
+  width: 450px;
+  height: 300px;
+  border-radius: 10px;
+}
+.box:hover {
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  -webkit-box-shadow: 1px 1px 7px black;
+          box-shadow: 1px 1px 7px black;
+}
+.box .vision {
+  height: 263px;
+}
+.box .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  border-radius: 0px 0px 10px 10px;
+  background-color: rgba(0, 0, 0, 0.595);
+}
+.box .info .info_name {
+  padding-left: 10px;
+  font-weight: bold;
+}
+.box .info .info_rew {
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+/*------------------------------------*/
+footer {
+  background-color: #e9e9e9;
+  padding: 10px;
+  /* padding-bottom: 420px; */
+  color: #868686;
+}
+
+@media (min-width: 280px) {
+  .main {
+    margin-top: 65px;
+    padding: 10px 10px;
+  }
+  .main .box {
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+    font-size: 3vh;
+  }
+  .main .box .vision {
+    height: 8em;
+  }
+  .main .rest_filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+  }
+  .main .rest_filter .all {
+    margin-left: 0px;
+  }
+  .main .rest_filter button {
+    font-size: 7vw;
+    font-weight: bold;
+    margin: 5px 0px 5px 0px;
+  }
+  .main .rest_filter .about {
+    display: none;
+  }
+}
+@media (min-width: 540px) {
+  .main {
+    margin-top: 55px;
+    font-size: small;
+    padding: 10px 10px;
+  }
+  .main .box {
+    margin: 10px;
+    width: 46%;
+    height: 100%;
+    font-size: 2.7vh;
+  }
+  .main .box .vision {
+    height: 6em;
+  }
+  .main .box .info_rew {
+    font-size: 1.6vh;
+  }
+  .main .rest_filter button {
+    font-size: 3vw;
+    margin: 10px 0px 10px 0px;
+    padding: 5px;
+  }
+}
+@media (min-width: 1024px) {
+  .main {
+    margin-top: 50px;
+    padding: 10px 100px;
+  }
+  .main .box {
+    margin: 10px;
+    width: 30%;
+    height: 100%;
+    font-size: 2vh;
+  }
+  .main .box .vision {
+    height: 14em;
+  }
+  .main .box .info_rew {
+    font-size: 1.6vh;
+  }
+  .main .rest_filter {
+    display: block;
+    width: 100%;
+  }
+  .main .rest_filter .all {
+    margin-left: 10px;
+  }
+  .main .rest_filter button {
+    font-size: 2vw;
+    font-weight: bold;
+    margin: 5px 0px 5px 0px;
+    padding: 5px;
+  }
+  .main .rest_filter .about {
+    display: inline;
+  }
+}
+@media (min-width: 1280px) {
+  .main {
+    margin-top: 70px;
+    padding: 10px 100px;
+  }
+  .main .box {
+    margin: 10px;
+    width: 31%;
+    font-size: 2.4vh;
+  }
+  .main .box .vision {
+    height: 10em;
+  }
+  .main .box .info_rew {
+    font-size: 1.6vh;
+  }
+  .main .rest_filter button {
+    font-weight: bold;
+    font-size: 1, 7vw;
+    margin: 10px 0px 10px 10px;
+    padding: 5px;
+  }
+}
+@media (min-width: 1920px) {
+  .main {
+    margin-top: 100px;
+    padding: 10px 300px;
+  }
+  .main .box {
+    margin: 10px;
+    width: 31.9%;
+    font-size: 2.4vh;
+  }
+  .main .box .vision {
+    height: 10em;
+  }
+  .main .box .info_rew {
+    font-size: 2vh;
+  }
+  .main .rest_filter button {
+    font-weight: normal;
+    font-size: 1vw;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+  }
+}

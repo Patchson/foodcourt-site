@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/*Навигационная панель(телефон)*/
+@media (min-width: 280px) {
+  .navbar_phone {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #ffd998;
+    left: 0;
+    top: 0;
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 10px black;
+            box-shadow: 0px 0px 10px black;
+    border-radius: 0px 0px 0px 60px;
+    -webkit-animation: navbar 0.7s linear;
+            animation: navbar 0.7s linear;
+  }
+  .navbar_phone a {
+    background-position: center;
+  }
+  .navbar_phone .logo_phone {
+    background-size: 100%;
+    margin: 0px 0px 0px 30px;
+    width: 80px;
+    height: 40px;
+  }
+  .navbar_phone .more {
+    background-size: 100%;
+    margin: 10px 10px 10px 0px;
+    width: 60px;
+    height: 40px;
+  }
+
+  @-webkit-keyframes navbar {
+    0% {
+      opacity: 0%;
+    }
+  }
+
+  @keyframes navbar {
+    0% {
+      opacity: 0%;
+    }
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #ffd998;
+    -webkit-box-shadow: 0px 0px 10px black;
+            box-shadow: 0px 0px 10px black;
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .sidenav .about {
+    display: none;
+  }
+}
+/* Навигационная панель */
+@media (min-width: 1000px) {
+  .about {
+    display: block;
+  }
+
+  .navbar_phone {
+    display: none;
+  }
+
+  .navbar {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    background-color: #ffd998;
+    left: 0;
+    top: 0;
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 10px black;
+            box-shadow: 0px 0px 10px black;
+    border-radius: 0px 0px 0px 60px;
+  }
+  .navbar a {
+    background-position: center;
+  }
+
+  .logo {
+    background-size: 100%;
+    margin: 0px 0px 0px 30px;
+    width: 80px;
+    height: 30px;
+  }
+
+  .bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    width: 100%;
+    border-radius: 0px 0px 0px 60px;
+  }
+
+  .delivery, .account_disable, .account_active {
+    margin-right: 10px;
+    background-size: 88%;
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+  }
+  .delivery:hover, .account_disable:hover, .account_active:hover {
+    background-color: aliceblue;
+    border-radius: 40px;
+    -webkit-transition: 0.3s linear;
+    transition: 0.3s linear;
+  }
+}
+@media (min-width: 1280px) {
+  .logo {
+    margin: 0px 0px 0px 40px;
+    width: 100px;
+    height: 50px;
+  }
+
+  .delivery, .account_disable, .account_active {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (min-width: 1920px) {
+  .logo {
+    margin: 0px 0px 0px 40px;
+    width: 140px;
+    height: 70px;
+  }
+
+  .delivery, .account_disable, .account_active {
+    width: 70px;
+    height: 70px;
+  }
+}
