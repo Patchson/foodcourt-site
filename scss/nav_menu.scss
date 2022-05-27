@@ -129,13 +129,13 @@ $minWidth: 280px;
 @media(min-width:($minWidth+1000)) {
     .logo {
         margin: 0px 0px 0px 40px;
-        width: 100px;
+        width: 130px;
         height: 50px;
     }
 
     .delivery, .account_disable, .account_active {
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
     }
 }
 

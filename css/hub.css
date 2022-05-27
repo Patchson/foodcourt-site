@@ -196,18 +196,18 @@ footer {
   .main .box {
     margin: 10px;
     width: 31%;
-    font-size: 2.4vh;
+    font-size: 4vh;
   }
   .main .box .vision {
-    height: 10em;
+    height: 7em;
   }
   .main .box .info_rew {
-    font-size: 1.6vh;
+    font-size: 3vh;
   }
   .main .rest_filter button {
     font-weight: bold;
-    font-size: 1, 7vw;
-    margin: 10px 0px 10px 10px;
+    font-size: 1, 5vw;
+    margin: 10px 10px 10px 10px;
     padding: 5px;
   }
 }
